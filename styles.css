@@ -176,20 +176,21 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    border: #0081c2 1px solid;
+    border:  1px ;
     border-radius: 10px;
     margin-left: 10%;
     max-width: 80%;
-    height: 500px;
+    height: auto;
     margin-top: 30px ;
+    background-color: #24262B;
+    position: relative;
 
     p{
         color: #ffffff;
         margin-left: 1rem ;
         font-size: 12px;
-        margin-right: 1rem;
-        overflow: hidden;
-        
+        margin-right: 1rem; 
+        margin-bottom: 20px;   
     }
 }
 .card img{
@@ -200,7 +201,36 @@ body{
     color: rgb(26, 209, 209);
     font-size: 16px;
     text-align: center;
-    margin: 10px;
-    
-    
+    margin: 10px 0 0 0;
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card::after, .card::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--angle),red, orange, yellow, green, blue, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2px;
+    border-radius: 10px;
+    animation: 3s spin linear infite; 
+}
+.card::before{
+    filter: blur(0.5rem);
+    opacity: 90%;
+}
+@keyframes spin{
+    from{
+        --angle:0deg
+    }
+    to{
+        --angle: 360deg;
+    }
 }
