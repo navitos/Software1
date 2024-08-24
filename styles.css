@@ -176,15 +176,6 @@ body{
 .card{
     display: flex;
     flex-direction: column;
-    border:  1px ;
-    border-radius: 10px;
-    margin-left: 10%;
-    max-width: 80%;
-    height: auto;
-    margin-top: 30px ;
-    background-color: #24262B;
-    position: relative;
-
     p{
         color: #ffffff;
         margin-left: 1rem ;
@@ -205,8 +196,8 @@ body{
 }
 .card{
     margin: 0 auto;
-    padding: 2em;
-    width: 300px;
+    padding-bottom: 2em;
+    width: 30em;
     background: #1c1f2b;
     text-align: center;
     border-radius: 10px;
