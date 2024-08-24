@@ -110,6 +110,7 @@ body{
     color: white;
     margin-top: auto;
     max-height: 200px;
+    border-top: aqua 2px solid;
     
 }
 .containerr{
@@ -164,6 +165,10 @@ body{
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
+    position: relative;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 .content h2{
@@ -202,13 +207,13 @@ body{
     text-align: center;
     border-radius: 10px;
     position: relative;
-  }
+}
   
-  @property --angle{
+@property --angle{
     syntax: "<angle>";
     initial-value: 0deg;
     inherits: false;
-  }
+}
   
 .card::after, .card::before{
     content: '';
@@ -235,4 +240,14 @@ body{
     to{
       --angle: 360deg;
     }
+}
+
+.row-content{
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+    max-width: 80%;
+    margin-left: 10%;
+    
+
 }
