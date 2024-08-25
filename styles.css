@@ -169,6 +169,7 @@ body{
     max-width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 50px;
 
 }
 .content h2{
@@ -246,11 +247,16 @@ body{
     padding-top: 30px;
     position: relative;
     max-width: 80%;
+    min-width: 30%;
     margin-left: 10%;
+    margin-right: 10%;
     padding-bottom: 50px;
+    flex-wrap: wrap;
     gap:20px;
-    
-
+    .card{
+        max-width: 200px;
+        
+    }
 }
 #hijo1{
     width: 400px;
