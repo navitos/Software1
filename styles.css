@@ -185,6 +185,7 @@ body{
 .card{
     display: flex;
     flex-direction: column;
+    max-width: 600px;
     p{
         color: #ffffff;
         margin-left: 1rem ;
