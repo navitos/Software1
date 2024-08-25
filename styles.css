@@ -319,9 +319,12 @@ body{
     
     }
     button:hover{
-        z-index: 1;
-        color: #000000;
+       
+        color: aqua;
+        font-size: 16px;
         font-weight: bold;
+        transition: all 0.3s ease;
+        
         
     }
     button::before{
