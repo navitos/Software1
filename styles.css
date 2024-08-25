@@ -264,12 +264,12 @@ body{
     gap:20px;
     .card{
         min-width: 200px;
-        max-width: 400px;
+        max-width: 500px;
         
     }
 }
 #hijo1{
-    width: 400px;
+    max-width: 600px;
     margin: auto;
 }
 #crystal{
