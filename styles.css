@@ -189,6 +189,11 @@ body{
         margin-right: 1rem; 
         margin-bottom: 20px;   
     }
+    ul li{
+        color: white;
+        text-decoration:dotted;
+        text-align: center;
+    }
 }
 .card img{
     width: 100%;
@@ -262,4 +267,16 @@ body{
 #hijo1{
     width: 400px;
     margin: auto;
+}
+#crystal{
+    height: 120px;
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+#hijo2{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
